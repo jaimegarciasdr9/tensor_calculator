@@ -1,3 +1,7 @@
+# -------
+# Author: Jaime García
+# Last update: 02/11/2023
+
 import torch
 
 __all__ = ['TensorCalculator']
@@ -32,13 +36,3 @@ class TensorCalculator:
             return result
         else:
             raise ValueError("Tensors must have the same shape for multiplication.")
-
-
-tc = TensorCalculator()
-tc_zero = tc.tensor_zeros(3, 4, 5)    # • Returns an all-Zeros Tensor
-tc_one = tc.tensor_ones(3, 4, 5)     # • Returns an all-Ones Tensor
-tc_random = tc.tensor_random(3, 4, 5)   # • Returns a Tensor with random values
-a = torch.ones([3, 4, 5])
-b = torch.ones([3, 4, 5]) * 2
-tc_sum = tc.tensor_sum(a, b)     # • Returns the sum of two tensor
-tc_mult = tc.tensor_multiply(a, b)    # • Returns the multiplication of two tensors
