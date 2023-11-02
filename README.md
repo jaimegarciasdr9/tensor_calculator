@@ -36,7 +36,12 @@ The class TensorCalculator has the following methods:
   4 ) tensor_sum(tensor1, tensor2): Returns the sum of two tensors if they have the same shape.
 
   5 ) tensor_multiply(tensor1, tensor2): Returns the element-wise multiplication of two tensors if they have the same shape.
+#### Extra:
+  6 ) tensor_transpose(self, tensor): This function takes a single input tensor as its argument and returns a new tensor that is the transpose of the input tensor. 
 
+  7 ) tensor_mean(self, tensor): This function calculates the mean value of all elements in the input tensor.
+
+  8 ) tensor_stddev(self, tensor): This function calculates the standard deviation of the elements in the input tensor. 
 ###
 #### Examples
 tc = TensorCalculator()

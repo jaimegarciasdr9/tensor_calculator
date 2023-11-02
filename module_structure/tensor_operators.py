@@ -36,3 +36,15 @@ class TensorCalculator:
             return result
         else:
             raise ValueError("Tensors must have the same shape for multiplication.")
+
+    def tensor_transpose(self, tensor):
+        transposed = torch.transpose(tensor, 0, 1)
+        return transposed
+
+    def tensor_mean(self, tensor):
+        mean_value = torch.mean(tensor)
+        return mean_value
+
+    def tensor_stddev(self, tensor):
+        std_dev = torch.std(tensor)
+        return std_dev
