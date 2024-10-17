@@ -1,4 +1,4 @@
-# module_structure
+# Tensor calculator
 
 #### Project description
 First professional module sketch.
